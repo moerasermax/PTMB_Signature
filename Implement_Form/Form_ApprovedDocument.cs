@@ -109,7 +109,7 @@ namespace PTMB_Signature.Implement_Form
             dictSource.Add("[Charge]", Charge_Label.Text);
             if (Repayment_Security_Deposit_Switch_Checkbox.Checked)
             {
-                dictSource.Add("[Repayment_Security_Deposit]", Repayment_Security_Deposit_Label.Text.Trim());
+                dictSource.Add("[Repayment_Security_Deposit]", Repayment_Security_Deposit_Label.Text.Trim()); 
             }
             else
             {
