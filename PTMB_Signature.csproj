@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9008A92E-0E6A-4FE2-8933-A83F4598528E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PTMB_Signature</RootNamespace>
+    <AssemblyName>PTMB_Signature</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>file.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AcctbookAPIs, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AcctbookAPIs.dll</HintPath>
+    </Reference>
+    <Reference Include="API_SendMail, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\API_SendMail.dll</HintPath>
+    </Reference>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelFinancialFunctions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\ExcelFinancialFunctions.3.2.0\lib\netstandard2.0\ExcelFinancialFunctions.dll</HintPath>
+    </Reference>
+    <Reference Include="Feeding_System_API">
+      <HintPath>bin\Feeding_System_API.dll</HintPath>
+    </Reference>
+    <Reference Include="Finance.ProductCalculatePreview.API, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Finance.ProductCalculatePreview.API.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Core, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\FSharp.Core.6.0.4\lib\netstandard2.0\FSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>bin\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PtmbhdMaterialSkin">
+      <HintPath>..\Code\Practice_Function\dll\PtmbhdMaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="PTMB_Signature_API, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\PTMB_Signature_API.dll</HintPath>
+    </Reference>
+    <Reference Include="ScorecardAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ScorecardAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="ScoreCardService.API">
+      <HintPath>bin\ScoreCardService.API.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TimeMachineAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\TimeMachineAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="VsPipe">
+      <HintPath>bin\VsPipe.dll</HintPath>
+    </Reference>
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+    <Reference Include="YC_ExportPdfAndWord_API, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\user\Desktop\SVN資料夾\SVN\共用函式庫\輸出文件\YC_ExportPdfAndWord_API.dll</HintPath>
+    </Reference>
+    <Reference Include="YC_MaterialColorPlugin">
+      <HintPath>bin\YC_MaterialColorPlugin.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Implement_Form\Account_System\AccountSystem_Signature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implement_Form\Account_System\AccountSystem_Signature.Designer.cs">
+      <DependentUpon>AccountSystem_Signature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implement_Form\Account_System\DataSet_SignToAccountSys.cs" />
+    <Compile Include="Implement_Form\Dev\EmployeeConfiglModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implement_Form\Dev\EmployeeConfiglModify.Designer.cs">
+      <DependentUpon>EmployeeConfiglModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implement_Form\Dev\Login_Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implement_Form\Dev\Login_Account.Designer.cs">
+      <DependentUpon>Login_Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implement_Form\Dev\Menu_Service.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implement_Form\Dev\Menu_Service.Designer.cs">
+      <DependentUpon>Menu_Service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implement_Form\Dev\Register_New_Mission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implement_Form\Dev\Register_New_Mission.Designer.cs">
+      <DependentUpon>Register_New_Mission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implement_Form\Form_ApprovedDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implement_Form\Form_ApprovedDocument.Designer.cs">
+      <DependentUpon>Form_ApprovedDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implement_Form\Form_ModeError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implement_Form\Form_ModeError.Designer.cs">
+      <DependentUpon>Form_ModeError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implement_Form\Form_Sign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implement_Form\Form_Sign.Designer.cs">
+      <DependentUpon>Form_Sign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implement_Form\InsertDataForm\NewUser_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Implement_Form\InsertDataForm\NewUser_Form.Designer.cs">
+      <DependentUpon>NewUser_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Implement_Risk\LOANIT_RISK.cs" />
+    <Compile Include="Model\Data_Set\DataSet_Enum.cs" />
+    <Compile Include="Model\Data_Set\Data_Set_Risk_Reference.cs" />
+    <Compile Include="Model\PipeData_ScoreCardCalculator.cs" />
+    <Compile Include="Model\Plugin\LOANIT_BACKSTAGE_CONTROLLER.cs" />
+    <Compile Include="Model\Plugin\LOANIT_CONTROLLER_Plugin.cs" />
+    <Compile Include="Model\Plugin\LOANIT_SQL_Plugin.cs" />
+    <Compile Include="Model\Plugin\LOANIT_DAO_Plugin.cs" />
+    <Compile Include="Model\Data_Set\Data_Set_Employee_Account_LOANIT.cs" />
+    <Compile Include="Model\Form_UI\Form_Sign_UI.cs" />
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Implement_Form\Account_System\AccountSystem_Signature.resx">
+      <DependentUpon>AccountSystem_Signature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implement_Form\Dev\EmployeeConfiglModify.resx">
+      <DependentUpon>EmployeeConfiglModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implement_Form\Dev\Login_Account.resx">
+      <DependentUpon>Login_Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implement_Form\Dev\Menu_Service.resx">
+      <DependentUpon>Menu_Service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implement_Form\Dev\Register_New_Mission.resx">
+      <DependentUpon>Register_New_Mission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implement_Form\Form_ApprovedDocument.resx">
+      <DependentUpon>Form_ApprovedDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implement_Form\Form_ModeError.resx">
+      <DependentUpon>Form_ModeError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implement_Form\Form_Sign.resx">
+      <DependentUpon>Form_Sign.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implement_Form\InsertDataForm\NewUser_Form.resx">
+      <DependentUpon>NewUser_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\PTMB_Signature.csproj.AssemblyReference.cache" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\PTMB_Signature_API.dll" />
+    <Content Include="file.ico" />
+    <None Include="img\asset-8d69dab4-f3e2-41a3-85db-f4aa6dd3a0ad.png" />
+    <Content Include="img\ban.png" />
+    <None Include="img\pass.png" />
+    <None Include="img\needsign.png" />
+    <None Include="img\LOANIT_logo.png" />
+    <None Include="img\LOANIT_logo_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="Model\DAO\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此專案參考這部電腦上所缺少的 NuGet 套件。請啟用 NuGet 套件還原，以下載該套件。如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的檔案是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

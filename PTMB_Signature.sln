@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PTMB_Signature", "PTMB_Signature.csproj", "{9008A92E-0E6A-4FE2-8933-A83F4598528E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Signature_Register_API", "..\Signature_Register_API1\Signature_Register_API.csproj", "{93DE06C7-1043-4374-9F58-8DB2665CEF58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9008A92E-0E6A-4FE2-8933-A83F4598528E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9008A92E-0E6A-4FE2-8933-A83F4598528E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9008A92E-0E6A-4FE2-8933-A83F4598528E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9008A92E-0E6A-4FE2-8933-A83F4598528E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93DE06C7-1043-4374-9F58-8DB2665CEF58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93DE06C7-1043-4374-9F58-8DB2665CEF58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93DE06C7-1043-4374-9F58-8DB2665CEF58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93DE06C7-1043-4374-9F58-8DB2665CEF58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {637C368E-9483-43F8-9650-3073BC9AF616}
+	EndGlobalSection
+EndGlobal
