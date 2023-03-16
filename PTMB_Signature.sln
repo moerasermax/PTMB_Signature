@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PTMB_Signature", "PTMB_Signature.csproj", "{9008A92E-0E6A-4FE2-8933-A83F4598528E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Signature_Register_API", "..\Signature_Register_API1\Signature_Register_API.csproj", "{93DE06C7-1043-4374-9F58-8DB2665CEF58}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Signature_Register_API", "Signature_Register_API1\Signature_Register_API.csproj", "{93DE06C7-1043-4374-9F58-8DB2665CEF58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
